@@ -1,0 +1,114 @@
+/*********** Base styles **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 175%;
+    text-align: center;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 125%;
+}
+
+p {
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+    font-size: 100%;
+    text-align: left;
+}
+
+#Croissant {
+    background-color: #bdffc1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -1px;
+    padding: 5px;
+    border: 1px solid #5680BC;
+  }
+
+#Ratatouille {
+    background-color: #81ac84;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -1px;
+    padding: 5px;
+    border: 1px solid #5680BC;
+  }
+
+#Blanquette {
+    background-color: #6d916f;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -1px;
+    padding: 5px;
+    border: 1px solid #5680BC;
+}
+
+
+/*********** Simple responsive framework **********/
+.row {
+    width: 100%;
+}
+
+/*********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        float: left;
+        padding: 10px;
+        border: 2px solid #5680BC;
+        background-color: #9BBEEE;
+        margin: 10px;
+        height: 245px;    
+        position: sticky;
+    }
+    .col-lg-1 {
+        width: calc(33.33% - 20px)
+    }
+}
+
+/*********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2{
+        float: left;
+        padding: 10px;
+        border: 2px solid #5680BC;
+        background-color: #9BBEEE;
+        margin: 10px;
+        height: 230px;
+        position: sticky;
+    }
+    .col-md-1 {
+        width: calc(50% - 20px);
+    }
+    .col-md-2 {
+        width: calc(100% - 20px);
+    }
+}
+
+/*********** Small devices only **********/
+@media (max-width: 767px) {
+    .col-sm-1 {
+        float: left;
+        flex: 1;
+        padding: 10px;
+        border: 2px solid #5680BC;
+        background-color: #9BBEEE;
+        margin: 10px;    
+        width: calc(100% - 20px);
+        height: 200px;
+        position: sticky;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
