@@ -1,0 +1,53 @@
+/* GENERAL */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER */
+#header-nav {
+    background-color: brown;
+}
+.navbar-header {
+    padding: 20px;
+}
+.navbar-header h1 { /* Restaurant name */
+    color: blanchedalmond;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.dropdown a:hover, .dropdown a:focus {
+    text-decoration: none;
+}
+.dropdown button {
+    clear: both;
+}
+#collapsable-nav a {
+    font-size: 1.5em;
+    margin-left: 20px;
+    color: blanchedalmond;
+  }
+
+/* MAIN CONTENT */
+#main-content > h2 {
+    font-size: 3em;
+    color: brown;
+    font-weight: bold;
+    margin: 20px;
+}
+.container-fluid .row > h3 {
+    font-size: 2em;
+    color: brown;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration-line: underline;
+}
+.container-fluid > .row{
+    margin: 10px 10px 30px;
+    padding: 10px;
+    background-color: lightgrey;
+}
