@@ -1,6 +1,10 @@
 /* GENERAL */
 * {
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container-fluid{
+    padding: 0px 10px;
 }
 
 /* HEADER */
@@ -33,21 +37,28 @@
   }
 
 /* MAIN CONTENT */
-#main-content > h2 {
+.non-visible-box {
+    background-color: aqua;
+    height: 90px;
+    width: 100%;
+    opacity: 0;
+}
+#main-content-title > h2 {
     font-size: 3em;
     color: brown;
     font-weight: bold;
     margin: 20px;
 }
-.container-fluid .row > h3 {
+#main-content div > h3 {
     font-size: 2em;
     color: brown;
     font-weight: bold;
     margin: 10px;
     text-decoration-line: underline;
 }
-.container-fluid > .row{
-    margin: 10px 10px 30px;
+#main-content #ratatouille, #main-content #blanquette-de-veau, #main-content #steack-tartare {
+    margin: 0px;
+    border: 10px solid white;
     padding: 10px;
     background-color: lightgrey;
 }
